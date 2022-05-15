@@ -1,0 +1,211 @@
+<?xml version="1.0" ?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+<context-param>
+<param-name>driver</param-name>
+<param-value>sun.jdbc.odbc.JdbcOdbcDriver</param-value>
+</context-param>
+
+<context-param>
+<param-name>durl</param-name>
+<param-value>jdbc:odbc:auction</param-value>
+</context-param>
+
+<context-param>
+<param-name>duser</param-name>
+<param-value>auction</param-value>
+</context-param>
+
+<context-param>
+<param-name>dpass</param-name>
+<param-value>auction</param-value>
+</context-param>
+<servlet>
+	<servlet-name>home</servlet-name>
+	<servlet-class>SearchServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>home</servlet-name>
+	<url-pattern>/SearchServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>AfterLogin</servlet-name>
+	<servlet-class>AfterLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AfterLogin</servlet-name>
+	<url-pattern>/AfterLogin</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>SellServlet</servlet-name>
+	<servlet-class>SellServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>SellServlet</servlet-name>
+	<url-pattern>/SellServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>SellProduct</servlet-name>
+	<servlet-class>SellProduct</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>SellProduct</servlet-name>
+	<url-pattern>/SellProduct</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>AuctionServlet</servlet-name>
+	<servlet-class>AuctionServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AuctionServlet</servlet-name>
+	<url-pattern>/AuctionServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>ClientServlet</servlet-name>
+	<servlet-class>ClientServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ClientServlet</servlet-name>
+	<url-pattern>/ClientServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>EditUserInfo</servlet-name>
+	<servlet-class>EditUserInfo</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>EditUserInfo</servlet-name>
+	<url-pattern>/EditUserInfo</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>EndToday</servlet-name>
+	<servlet-class>EndToday</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>EndToday</servlet-name>
+	<url-pattern>/EndToday</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>ItemDetails</servlet-name>
+	<servlet-class>ItemDetails</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ItemDetails</servlet-name>
+	<url-pattern>/ItemDetails</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>LoginServlet</servlet-name>
+	<servlet-class>LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>LoginServlet</servlet-name>
+	<url-pattern>/LoginServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>NewToday</servlet-name>
+	<servlet-class>NewToday</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>NewToday</servlet-name>
+	<url-pattern>/NewToday</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>RegistrationServlet</servlet-name>
+	<servlet-class>RegistrationServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>RegistrationServlet</servlet-name>
+	<url-pattern>/RegistrationServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>homeworkassign</servlet-name>
+	<servlet-class>homeworkassign</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>homeworkassign</servlet-name>
+	<url-pattern>/homeworkassign</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>Session</servlet-name>
+	<servlet-class>Session</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>Session</servlet-name>
+	<url-pattern>/Session</url-pattern>
+</servlet-mapping>
+<servlet>
+	<servlet-name>SessionCache</servlet-name>
+	<servlet-class>SessionCache</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>SessionCache</servlet-name>
+	<url-pattern>/SessionCache</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>AdminLogin</servlet-name>
+	<servlet-class>AdminLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AdminLogin</servlet-name>
+	<url-pattern>/AdminLogin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>DelItemCat</servlet-name>
+	<servlet-class>DelItemCat</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>DelItemCat</servlet-name>
+	<url-pattern>/DelItemCat</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>AdminLogin1</servlet-name>
+	<servlet-class>AdminLogin1</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AdminLogin1</servlet-name>
+	<url-pattern>/AdminLogin1</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>AdminLogin2</servlet-name>
+	<servlet-class>AdminLogin2</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AdminLogin2</servlet-name>
+	<url-pattern>/AdminLogin2</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>AddMoney</servlet-name>
+	<servlet-class>AddMoney</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>AddMoney</servlet-name>
+	<url-pattern>/AddMoney</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>DelCatItem</servlet-name>
+	<servlet-class>DelCatItem</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>DelCatItem</servlet-name>
+	<url-pattern>/DelCatItem</url-pattern>
+</servlet-mapping>
+
+
+
+<welcome-file-list>
+<welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+</web-app>
